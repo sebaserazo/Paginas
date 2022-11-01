@@ -1,0 +1,22 @@
+<html>
+<head>
+<script type="text/javascript">
+function sayHello(name, age)
+{
+ document.write (name + " is " + age + " years old.");
+ document.write("<br/><br/><p><a href=\"../index.html\">volver</a></p>");
+}
+</script>
+</head>
+<body>
+<p>Click the following button to call the function</p>
+<form>
+<script>
+  var nombre= prompt("ingrese su nombre");
+  var edad= Number(prompt("ingrese su edad"));
+  sayHello(nombre,edad);
+  </script>
+</form>
+<p>Use different parameters inside the function and then try...</p>
+</body>
+</html>
