@@ -1,0 +1,55 @@
+    <head>
+        <script type="text/javascript">
+        <!--
+
+        var a;
+        var b;
+        var c;
+
+        function cuadrado(x){
+            return x*x 
+        }
+
+        function hipotenusa(a, b) {
+            return Math.sqrt(square(a) + square(b));
+        }
+  
+        function perimetro(a,b,c){
+            return a+b+c;
+        }
+
+       function area(a,b){
+            return a*b/2;
+        }
+
+        function solucion(){
+            var d;
+            var e;
+
+            c = hipotenusa(a, b);
+            d = perimetro(a,b,c);
+            e = area(a, b);
+
+            document.write ( "Hipotenusa:",c ); document.write ("<br/>");
+            document.write ( "Perimetro:",d); document.write ("<br/>");
+            document.write ( "Area:",e); document.write ("<br/>"); 
+            document.write("<br/><br/><p><a href=\"../index.html\">volver</a></p>");
+        
+            
+        }
+
+        function perdiDatos(){
+            a = Number(prompt("Ingresar primer lado del triangulo"))
+            b = Number(prompt("Ingresar segundo lado del triangulo"))
+
+            solucion()
+        }
+
+        //-->
+        </script>
+    </head>
+    <body>
+        <h3>Presiona el boton para ingresar los datos del triangulo</h3> 
+         <input type="button" onclick="perdiDatos()" value="Call Function"> 
+     </body>
+</html>
