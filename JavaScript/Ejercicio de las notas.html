@@ -1,0 +1,20 @@
+
+<html>
+<body>
+<script type="text/javascript">
+var notaA=Number(prompt("Ingresar primera nota"));
+var notaB=Number(prompt("Ingresar segunda nota"));
+var notaC=Number(prompt("Ingresar tercera nota"));
+var sumatotaldelasnotas=notaA+notaB+notaC;
+var promedio=sumatotaldelasnotas/3;
+
+if( promedio>= 7 ){
+ document.write( "<b> Aprobaste con </b>" + promedio); 
+}else{
+ document.write ("<b> Desaprobaste con </b> "+ promedio); 
+}
+  document.write("<br/><br/><p><a href=\"../index.html\">volver</a></p>");
+</script>
+<p> Ingresar otra notas</p> 
+</body>
+</html>
