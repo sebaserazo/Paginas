@@ -1,0 +1,24 @@
+
+<html>
+<body>
+<script type="text/javascript">
+var frecuencia=Number(prompt("Ingresar inductancia")); 
+var inductancia=Number(prompt("Ingresar capacitancia")); 
+var capacitancia=Number(prompt("Ingresar frecuencia")); 
+var XL= (6.28*frecuencia*inductancia); 
+var XC= 1/(6.28*frecuencia*capacitancia); 
+if( XL>XC ){
+ document.write( "<b> El circuito es inductivo</b><br/>"); 
+}
+if (XL<XC){
+ document.write ("<br/> <b> El circuito es capacitivo</b>"); 
+}
+if (XL == XC){
+document.write ("<br/> <b> El circuito es resonante</b>"); 
+}   
+ 
+  document.write("<br/><br/><p><a href=\"../index.html\">volver</a></p>");
+</script>
+ <p> Ingresar otra valores</p> 
+</body>
+</html>
